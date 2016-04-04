@@ -1,0 +1,31 @@
+Code Style Conventions
+
+(!) - неверно
+(~) - допустимо, но нехорошо
+
+имена классов - с большой буквы  
+
+Operators   account (!)  ACCOUNT (!)
+
+PrimitiveOperators
+
+сложные имена - все слова внутри с большой буквы 
+
+константы - все буквы большие:  MAXIMUM
+в константах слова разделяются подчёркиваниями
+MAX_SIZE    MAXSIZE (~)
+
+имена переменных
+1) делайте "говорящие" имена
+
+int c = 256;  (!!!)   Magic Number
+
+final static int DEFAULT_ACCOUNT_NUMBER = 256;
+
+int accountNumber = DEFAULT_ACCOUNT_NUMBER;
+
+Statement  - оператор
+Operator  - операция (арифм. и т.п.)
+
+|| и &&  - логические операции 
+сокращённого цикла обработки
