@@ -26,5 +26,6 @@ public class PrimitiveTypes2 {
 		System.out.println(isBlack & isTall);
 		
 	}
+	
 
 }
