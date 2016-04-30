@@ -16,7 +16,7 @@ public class BinarySearch {
 		System.out.println(Arrays.toString(a));
 		
 		
-		int result = binarySearch(a, -500); 
+		int result = binarySearch(a, 20); 
 		
 		System.out.println(result); 
 		System.out.println(a[result]);

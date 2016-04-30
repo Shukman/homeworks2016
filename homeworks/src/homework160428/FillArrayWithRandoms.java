@@ -22,7 +22,7 @@ public class FillArrayWithRandoms {
 		Arrays.sort(x);
 		System.out.println(Arrays.toString(x));
 		
-		System.out.println(Arrays.binarySearch(x, 50));
+		System.out.println(Arrays.binarySearch(x, 15));
 	}
 	
 	static int[] randomArray(int n, int max) {
