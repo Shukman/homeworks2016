@@ -2,7 +2,7 @@ package homework160428;
 
 import java.util.Arrays;
 
-public class BinarySearch {
+public class Task01 {
 	
 	public static void main(String[] args) {
 		
@@ -16,10 +16,13 @@ public class BinarySearch {
 		System.out.println(Arrays.toString(a));
 		
 		
-		int result = binarySearch(a, 1); 
+		
+		int result = binarySearch(a, -700); 
+		
 		
 		System.out.println(result); 
 		System.out.println(a[result]);
+
 	}
 	
 	static int binarySearch(int[] x, int key) {
@@ -33,12 +36,16 @@ public class BinarySearch {
 			if(x[mid] == key) {
 				return mid;
 			}
+			
 			if (x[mid] > key) {
 				right = mid - 1;
-			} else {
+			} else if (x[mid] < key) {
 				left = mid + 1;
+			}else {
+				return mid;
 			}
 		}
-		return -1;
+		System.out.println(-(left + 1));
+		return key;
 	}
 }
