@@ -1,4 +1,4 @@
-package homework160505;
+package homework160510;
 
 public class Animal {
 	
@@ -9,9 +9,9 @@ public class Animal {
 	private String kind;				//  null
 	private boolean isHungry = true;
 	
-	public Animal(String kind, String name) { //конструктор, название совпадает с классом и нет типа возвращаемого значения
-		this.kind = kind;
-		this.name = name;
+	{//блоки инициализации
+		System.out.println("создано очередное животное");
+		
 	}
 	
 	public Animal(boolean h, String n, String k){
@@ -20,10 +20,19 @@ public class Animal {
 		isHungry = h;
 	}
 	
-	public Animal() {
-		kind = "микроб";
+	public Animal(String kind){
+		this.kind = kind;
 		name = "";
-		isHungry = true;
+		isHungry = false;
+	}
+	
+	public Animal(String kind, String name) { //конструктор, название совпадает с классом и нет типа возвращаемого значения
+		this(true, name, kind); //использовать конструктор уже существующий выше
+	}
+	
+	public Animal() {
+		this("микроб", "");
+//		this(true, "", "микроб");
 	}
 	
 	//behavior - описывает поведение
